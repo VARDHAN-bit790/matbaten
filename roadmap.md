@@ -1,0 +1,28 @@
+# Matbåten — task list
+
+- [x] Enable Lovable Cloud backend + email, Google and Lovable sign-in
+- [x] Database tables: orders + saved addresses (owner-only access)
+- [x] Sign in / sign up page (/auth) and reset-password page
+- [x] Header: sign-in state + account/orders links
+- [x] Order history page with "Order again"
+- [x] Dish search on the Restaurants page
+- [x] Checkout: saved addresses, "order for later", save order for signed-in users
+- [x] Verify the full flow in the browser (sign-up, sign-in, order, history, reorder, EN/SV)
+- [x] UI polish pass: hero wash, badges, stats, craving strip, navy CTA band
+- [x] Dish photos: photo for every dish on menus, cart, search results
+- [x] Live order tracker: animated preparing → courier → delivered progress
+- [x] Micro-animations: hover lifts, pop/rise entrances, button press feedback
+- [x] Verify new UI in browser (EN + SV) and run tests
+- [x] Replace approximate delivery-area coordinates with source-backed real locations and verify selection.
+- [x] Add a real Google street/satellite map to the restaurant area selector without invented building pins.
+- [ ] Verify map presentation and Google rendering on an authorized origin (Google Maps live checks unavailable in sandbox).
+- [x] Add sourced municipality-wide subarea browsing and authenticated real street/house-number search.
+- [x] Test municipality filtering and verify non-Maps browsing in both languages (23 tests passed).
+- [x] Save home address by device location: "Use my location" fills street + delivery area from GPS, Karlskrona-only (31 tests passed, live lookup verified).
+- [x] Delete the temporary GPS test accounts and their data after verification.
+- [x] Dish favourites: heart any dish on menus/search, favourites strip on the home page with one-tap add (browser-verified EN + SV).
+- [x] Evening dark mode: navy dark palette, header light/dark switch, no flash on load, system preference default (browser-verified).
+- [x] Live search suggestions, quantity stepper and loading skeletons (browser-verified: dropdown with photos/price, stepper adds correct qty, shimmer skeletons on Orders + Account).
+- [x] Analytics events: project.dish_favourited, project.add_to_cart, project.order_completed — wired into heart/add/checkout handlers, catalog registered (3 events), schema check passed.
+- [x] Delete the temporary skeleton-test account and its data after verification.
+- [ ] Verify dark mode, favourites and events on the published site (maps + events only land from preview/published use).

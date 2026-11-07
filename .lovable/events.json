@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "events": {
+    "project.add_to_cart": {
+      "event_schema_version": 1,
+      "description": "The visitor added one or more of a dish to the cart.",
+      "privacy": {
+        "contains_pii": false,
+        "purpose": "product_analytics"
+      },
+      "properties_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "dish_id",
+          "restaurant_id",
+          "qty"
+        ],
+        "properties": {
+          "dish_id": {
+            "type": "string"
+          },
+          "restaurant_id": {
+            "type": "string"
+          },
+          "qty": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "project.dish_favourited": {
+      "event_schema_version": 1,
+      "description": "The visitor hearted a dish, adding it to their favourites.",
+      "privacy": {
+        "contains_pii": false,
+        "purpose": "product_analytics"
+      },
+      "properties_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "dish_id"
+        ],
+        "properties": {
+          "dish_id": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "project.order_completed": {
+      "event_schema_version": 1,
+      "description": "A completed order was confirmed at checkout.",
+      "privacy": {
+        "contains_pii": false,
+        "purpose": "product_analytics"
+      },
+      "properties_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "restaurant_id",
+          "total",
+          "mode"
+        ],
+        "properties": {
+          "restaurant_id": {
+            "type": "string"
+          },
+          "total": {
+            "type": "number"
+          },
+          "mode": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
